@@ -1,0 +1,7 @@
+{
+  "name": "Triangle Area Calculator Pro",
+  "description": "A comprehensive tool to calculate the area of multiple triangles from side lengths. Features include image upload, project notes, dynamic inputs, unit conversions (feet, inches, meters), and PDF/Excel report generation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
