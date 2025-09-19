@@ -115,7 +115,13 @@ const App: React.FC = () => {
     
     setIsAnalyzing(true);
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+      if (!apiKey) {
+        alert("Missing Gemini API Key. Please set VITE_GEMINI_API_KEY in your .env.local file.");
+        setIsAnalyzing(false);
+        return;
+      }
+      const ai = new GoogleGenAI({ apiKey });
       
       const mimeType = imageDataUrl.substring(imageDataUrl.indexOf(":") + 1, imageDataUrl.indexOf(";"));
       const base64Data = imageDataUrl.split(',')[1];

@@ -13,7 +13,7 @@
     "react-dom": "^18.2.0",
     "framer-motion": "^12.23.16",
     "@use-gesture/react": "^10.3.1",
-    "@google/genai": "^0.23.0"
+    "@google/genai": "^1.20.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
